@@ -1,0 +1,26 @@
+CREATE TABLE BettingData (
+    BettingDataId INT AUTO_INCREMENT,
+    HT_Attacks INT,
+    HT_Attacks INT,
+	HT_DangerousAttacks INT,
+	HT_Possession INT,
+	HT_ShotsOnGoal INT
+	HT_ShotsOffGoal INT,
+	AT_Attacks INT,
+	AT_DangerousAttacks INT,
+	AT_Possession INT,
+	AT_ShotsOnGoal INT,
+	AT_ShotsOffGoal INT,
+	HT_Name VARCHAR(255),
+	AT_Name VARCHAR(255),
+	HT_Score INT,
+	AT_Score INT,
+	Time VARCHAR(255),
+	MatchTime VARCHAR(255),
+	HT_AsianHandicap FLOAT,
+	AT_AsianHandicap FLOAT,
+	HT_Wins FLOAT,
+	Draw FLOAT,
+	AT_Wins FLOAT,
+    PRIMARY KEY (BettingDataId)
+);
