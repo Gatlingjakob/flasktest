@@ -1,3 +1,19 @@
-body{
-color: blue;
+#box{
+background-color:#737D93;
+width:60%;
+height:100%;
+margin:auto; /*you only need this part to center*/
+color: white;
+padding: 20px;
 }
+
+#match {
+background-color: white;
+color: black; 
+border-style: groove;
+border-width: thin;
+border: 1px solid black ;
+padding: 10px;
+}
+
+
