@@ -7,9 +7,30 @@
   <body>
     {% extends "template.html" %}
     {% block content %}
-    <h1> My First Try Using Flask </h1>
-    <p> Flask is Fun </p>
-    
+
+    {% for i,row in data: %}
+    <br>
+    <p> Match {% print (i+1) %} </p>
+      {% print ("Home Team: " + row["HT_Name"]) %}
+      <br>
+      {% print ("Away Team: " + row["AT_Name"]) %}
+      <br>
+      {% print ("Home Team Score: " + row["HT_Score"]|string) %}
+      <br>
+      {% print ("Away Team Score: " + row["AT_Score"]|string) %}
+      <br>
+      {% print ("Match Time: " + row["MatchTime"]|string) %}
+      <br>
+      {% print ("Home Team Wins: " + row["HT_Wins"]|string) %}
+      <br>
+      {% print ("Draw: " + row["Draw"]|string) %}
+      <br>
+      {% print ("Away Team Wins: " + row["AT_Wins"]|string) %}
+      <br>
+
+    {% endfor %}
+
     {% endblock %}
+
   </body>
 </html>
